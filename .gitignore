@@ -1,0 +1,59 @@
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# directories
+.directory
+.settings/
+.target/
+.worksheet/
+bin/
+build/
+dist/
+logs/
+node_modules/
+out/
+target/
+tmp/
+
+# files
+*.iml
+*/.DS_Store
+\#*
+.cache
+.classpath
+.DS_Store
+.history
+.idea
+.idea_modules
+.project
+RUNNING_PID
+.orig
+
+#ect
+.gradle
+*.sw?
+.#*
+*#
+*~
+*.jar
+!.mvn/wrapper/maven-wrapper.jar
