@@ -21,7 +21,8 @@ public class Product {
     public Product(Element  element) {
         String priceString = element.getElementsByAttributeValue("id", "gotoshop-price").text()
                 .replace(",",".")
-                .replace("грн","");
+                .replace("грн","")
+                .replace(Character.toString((char)160),"");
         priceString=priceString.substring(0,priceString.length()-1);
         this.price = Double.parseDouble("501.00");
         this.price= Double.parseDouble(priceString);
@@ -58,6 +59,16 @@ public class Product {
 
     public void setOfferShop(String offerShop) {
         this.offerShop = offerShop;
+    }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "name='" + name + '\'' +
+                ", price=" + price +
+                ", isInStock=" + isInStock +
+                ", offerShop='" + offerShop + '\'' +
+                '}';
     }
 }
 
